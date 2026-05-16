@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors & Partners | GOL'26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .sponsor-content { margin-top: 50px; }
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .partner-item {
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        .partner-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .partner-item img {
+            max-width: 100%;
+            max-height: 80px;
+            transition: var(--transition);
+        }
+        .partner-item:hover img {
+            transform: scale(1.1);
+        }
+        .sponsor-featured {
+            background: var(--glass-bg);
+            padding: 50px;
+            border-radius: 30px;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 60px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .sponsor-featured { flex-direction: column; text-align: center; padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">CONFGOL</a>
+            </div>
+            <nav id="main-nav">
+                <div id="toggle-nav" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sponsor-and-partners.html" class="active">Sponsors</a></li>
+                    <li><a href="keynote-speakers.html">Speakers</a></li>
+                    <li><a href="special-sessions.html">Sessions</a></li>
+                    <li><a href="author-guideline.html">Guidelines</a></li>
+                    <li><a href="committees.html">Committees</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 150px;">
+        <div class="section-header">
+            <h2>Sponsors & Partners</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="sponsor-featured">
+            <img src="images/asso.png" alt="Sponsor" style="max-height: 120px; border-radius: 10px;">
+            <div>
+                <h3 style="color: var(--primary-pink); margin-bottom: 15px;">AMCLog - Association Marocaine de la Chaine Logistique</h3>
+                <p style="color: #ccc;">AMCLog est une association à but non lucratif fondée à Rabat le 9 octobre 2013 à l'ENSIAS. Elle oeuvre dans le domaine de la logistique, l’un des domaines d’activités prioritaires au Maroc et a comme ambition de participer à la stratégie nationale de développement de la compétitivité logistique.</p>
+            </div>
+        </div>
+
+        <div class="section-header" style="margin-bottom: 40px;">
+            <h3>Strategic Partners</h3>
+        </div>
+
+        <div class="partners-grid">
+            <div class="partner-item"><img src="images/springer1.png" alt="Springer"></div>
+            <div class="partner-item"><img src="images/ensias.jpg" alt="ENSIAS"></div>
+            <div class="partner-item"><img src="images/ufes.png" alt="Partner"></div>
+            <div class="partner-item"><img src="images/cnrst.png" alt="CNRST"></div>
+            <div class="partner-item"><img src="images/um5.png" alt="UM5"></div>
+            <div class="partner-item"><img src="images/lehavre.png" alt="Le Havre"></div>
+        </div>
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CONFGOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

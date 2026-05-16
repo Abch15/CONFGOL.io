@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees | GOL'26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .committee-section { display: none; }
+        .committee-section.active { display: block; animation: fadeIn 0.5s ease; }
+        .committee-list { columns: 2; list-style: none; padding: 0; }
+        @media (max-width: 768px) { .committee-list { columns: 1; } }
+        .committee-list li { padding: 8px 0; border-bottom: 1px solid var(--glass-border); font-size: 14px; color: #ccc; }
+        .committee-nav { margin-bottom: 40px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">CONFGOL</a>
+            </div>
+            <nav id="main-nav">
+                <div id="toggle-nav" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sponsor-and-partners.html">Sponsors</a></li>
+                    <li><a href="keynote-speakers.html">Speakers</a></li>
+                    <li><a href="special-sessions.html">Sessions</a></li>
+                    <li><a href="author-guideline.html">Guidelines</a></li>
+                    <li><a href="committees.html" class="active">Committees</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 150px;">
+        <div class="section-header">
+            <h2>Conference Committees</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="committee-nav">
+            <button class="btn btn-secondary active" data-target="scientific-committee">Scientific Committee</button>
+            <button class="btn btn-secondary" data-target="organizing-committee">Organizing Committee</button>
+            <button class="btn btn-secondary" data-target="steering-committee">Steering Committee</button>
+        </div>
+
+        <section id="scientific-committee" class="committee-section active glass-card" style="flex-direction: column; align-items: flex-start;">
+            <h3>Scientific Committee</h3>
+            <ul class="committee-list">
+                <li>Abdelaziz Berrado (Morocco)</li>
+                <li>Abdelhamid Benaini (France)</li>
+                <li>Abdelouahed Sabri (Morocco)</li>
+                <li>Abderrahman Abbassi (Morocco)</li>
+                <li>Abderrahman EL Mhamedi (France)</li>
+                <li>Abdeslam Kadrani (Morocco)</li>
+                <li>Abdessamad Douraid (Morocco)</li>
+                <li>Adil Bellabdaoui (Morocco)</li>
+                <li>Adnane Cabani (France)</li>
+                <li>Adnan Hajji (Canada)</li>
+                <li>Adnen El Amraoui (France)</li>
+                <li>Ahmed EL Hilali Alaoui (Morocco)</li>
+                <li>Ahmed Frikha (Tunisia)</li>
+                <li>Alexandre Dolgui (France)</li>
+                <li>Ali Cheaitou (UAE)</li>
+                <li>Ali Mirzazadeh (Iran)</li>
+                <li>Amina EL Yaagoubi (France)</li>
+                <li>Andrea Cynthia Duhamel (France)</li>
+                <li>Aziz Moukrim (France)</li>
+                <li>Bertrand Rose (France)</li>
+                <li>Christophe Varnier (France)</li>
+                <li>Claire Capo (France)</li>
+                <li>Claude Duvallet (France)</li>
+                <li>El Houssaine Hssayini (Morocco)</li>
+                <li>Elkafi Hassini (Canada)</li>
+                <li>Evren Sahin (France)</li>
+                <li>Fabian Behrendt (Germany)</li>
+                <li>Farhad Moeeni (USA)</li>
+                <li>Fatima El Khoukhi (Morocco)</li>
+                <li>Fatima Ouzayd (Morocco)</li>
+                <li>Fatima Zahra Mhada (Morocco)</li>
+                <li>Fouad Jawab (Morocco)</li>
+                <li>François Marmier (France)</li>
+                <li>Ghita Bencheikh (France)</li>
+                <li>Ghizlane Bencheikh (Morocco)</li>
+                <li>Gilles Paché (France)</li>
+                <li>Hamid Allaoui (France)</li>
+                <li>Hassan Hbid (Morocco)</li>
+                <li>Hassane El Baz (Morocco)</li>
+                <li>Hatim Guermah (Morocco)</li>
+                <li>Ioana Filipas (France)</li>
+                <li>Jabir Arif (Morocco)</li>
+                <li>Jan Fransoo (Netherlands)</li>
+                <li>Jaouad Boukachour (France)</li>
+                <li>Jawad Abrache (Morocco)</li>
+                <li>Jean-François Côté (Canada)</li>
+                <li>Joel Colloc (France)</li>
+                <li>Kawtar Tikitou (Morocco)</li>
+                <li>Khaoula Bouanane (Morocco)</li>
+                <li>Lahcen El Hiki (France)</li>
+                <li>Lamia Benhiba (Morocco)</li>
+                <li>Lalith Edirisinghe (Sri Lanka)</li>
+                <li>Laurent Al Fandari (France)</li>
+                <li>Lino Marujo (Brazil)</li>
+                <li>Loubna Benabbou (Canada)</li>
+                <li>Luis Pinto Ferreira (Portugal)</li>
+                <li>Mahmoud El Hamlaoui (Morocco)</li>
+                <li>Malek Sarhani (Morocco)</li>
+                <li>Marc Demange (Australia)</li>
+                <li>Marie-Laure Baron (France)</li>
+                <li>Matthieu Lauras (France)</li>
+                <li>Mariam Benhadou (Morocco)</li>
+                <li>Mohamed Essaaidi (Morocco)</li>
+                <li>Mohamed El Merouani (Morocco)</li>
+                <li>Mohamed Ouzineb (Morocco)</li>
+                <li>Mohammed Dahane (France)</li>
+                <li>Mohammed El Amrani (Morocco)</li>
+                <li>Mouhsene Fri (Morocco)</li>
+                <li>Mustapha Oudani (Morocco)</li>
+                <li>Mustapha Ouhimmou (Canada)</li>
+                <li>Nadia Lehoux (Canada)</li>
+                <li>Naoufal Rouky (Morocco)</li>
+                <li>Nathalie Sauer (France)</li>
+                <li>Nesrine Zoghlami (Tunisia)</li>
+                <li>Nicolas Zuffrey (Switzerland)</li>
+                <li>Noureddine Kerzazi (Morocco)</li>
+                <li>Philippe Michelon (France)</li>
+                <li>Rachida Abounacer (Morocco)</li>
+                <li>Samah El Rhanimi (Morocco)</li>
+                <li>Song Dongping (UK)</li>
+                <li>Sophie Michel Loyal (France)</li>
+                <li>Sorin Eugen Zaharia (Romania)</li>
+                <li>Souad Sadki (Morocco)</li>
+                <li>Taicir Moalla Loukil (Tunisia)</li>
+                <li>Teodore Gabriel Crainic (Canada)</li>
+                <li>Valérie Botta-Genoulaz (France)</li>
+                <li>Viviane Gascon (Canada)</li>
+                <li>Youssef Benadada (Morocco)</li>
+                <li>Youssef Boulaksil (UAE)</li>
+                <li>Yves Sallez (France)</li>
+                <li>Zhanna Zenkova (Russia)</li>
+                <li>Zied Jemai (Tunis)</li>
+            </ul>
+        </section>
+
+        <section id="organizing-committee" class="committee-section glass-card" style="flex-direction: column; align-items: flex-start;">
+            <h3>Organizing Committee</h3>
+            <ul class="committee-list" style="columns: 1;">
+                <li>Youssef Benadada - Mohammed V University, Morocco</li>
+                <li>Ahmed El Hilali Alaoui - Euro-Mediterranean University of Fes, Morocco</li>
+                <li>Jaouad Boukachour - University of Le Havre, France</li>
+                <li>Fatima Zahra Mhada - Mohammed V University, Morocco</li>
+                <li>Fatima Ouzayd - Mohammed V University, Morocco</li>
+                <li>Mohammed El Amrani - Faculty of Sciences, Mohammed V University in Rabat, Morocco</li>
+                <li>Khaoula Bouanane - Mohammed V University, Morocco</li>
+                <li>Khadija Mhada - ENSAM Casablanca, Morocco</li>
+                <li>Khalil Abbal - Mohammed V University, Morocco</li>
+            </ul>
+        </section>
+
+        <section id="steering-committee" class="committee-section glass-card" style="flex-direction: column; align-items: flex-start;">
+            <h3>Steering Committee Chairs</h3>
+            <ul class="committee-list" style="columns: 1;">
+                <li>Youssef Benadada - Mohammed V University, Morocco</li>
+                <li>Ahmed El Hilali Alaoui - Euro-Mediterranean University of Fes, Morocco</li>
+                <li>Jaouad Boukachour - University of Le Havre, France</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CONFGOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Local handling for buttons in this page
+        const navBtns = document.querySelectorAll('.committee-nav .btn');
+        const sections = document.querySelectorAll('.committee-section');
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                navBtns.forEach(b => b.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.getAttribute('data-target')).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

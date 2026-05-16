@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keynote Speakers | GOL'26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .speaker-full-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 50px;
+            margin-bottom: 60px;
+            display: flex;
+            gap: 50px;
+            transition: var(--transition);
+        }
+        .speaker-full-card:hover {
+            border-color: var(--primary-pink);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .speaker-aside {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+        .speaker-aside img {
+            width: 100%;
+            border-radius: 20px;
+            border: 4px solid var(--primary-pink);
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .speaker-main { flex: 1; }
+        .speaker-main h3 { font-size: 2rem; margin-bottom: 10px; color: var(--primary-pink); }
+        .speaker-main .title { font-size: 1.1rem; color: #ccc; margin-bottom: 30px; font-weight: 500; display: block; }
+        .speaker-main .bio { font-size: 15px; color: #aaa; margin-bottom: 20px; text-align: justify; }
+        .speaker-main h4 { margin-top: 30px; margin-bottom: 15px; color: var(--white); font-size: 1.2rem; }
+        @media (max-width: 992px) {
+            .speaker-full-card { flex-direction: column; padding: 30px; }
+            .speaker-aside { flex: 0 0 auto; max-width: 250px; margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">CONFGOL</a>
+            </div>
+            <nav id="main-nav">
+                <div id="toggle-nav" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sponsor-and-partners.html">Sponsors</a></li>
+                    <li><a href="keynote-speakers.html" class="active">Speakers</a></li>
+                    <li><a href="special-sessions.html">Sessions</a></li>
+                    <li><a href="author-guideline.html">Guidelines</a></li>
+                    <li><a href="committees.html">Committees</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 150px;">
+        <div class="section-header">
+            <h2>Keynote Speakers</h2>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Speaker 1 -->
+        <article class="speaker-full-card">
+            <div class="speaker-aside">
+                <img src="images/Dmitry.png" alt="Dmitry Ivanov">
+            </div>
+            <div class="speaker-main">
+                <h3>Dmitry Ivanov</h3>
+                <span class="title">Berlin School of Economics and Law, Germany</span>
+                <p class="bio">Prof. Dr. Dr. habil. Dmitry Ivanov is Professor of Supply Chain and Operations Management, and director of the Digital-AI Supply Chain Lab at the Berlin School of Economics and Law. His research spans supply chain resilience and digital supply chain twins. He has made influential contributions, particularly exploring structural dynamics of supply chains.</p>
+                <p class="bio">He delivered invited plenary, keynote, panel and guest talks at the conferences of INFORMS, IFPR, IFIP, IFAC, IEEE, DSI and POM, and over 40 universities worldwide. Ranked #1 worldwide in Supply Chain by ScholarGPS and #1 in Operations Research by Standford/Elsevier ranking.</p>
+                
+                <h4>Supply Chain Viability and Digital Ecosystems</h4>
+                <p class="bio">This talk is devoted to supply chain viability and digital ecosystems. We will discuss adaptation-based principles of supply chain viability, design and implementation of digital technology for viable supply chains, and human-AI collaboration in digital twins and viability stress testing.</p>
+            </div>
+        </article>
+
+        <!-- Speaker 2 -->
+        <article class="speaker-full-card">
+            <div class="speaker-aside">
+                <img src="images/crainic.png" alt="Teodor Gabriel Crainic">
+            </div>
+            <div class="speaker-main">
+                <h3>Teodor Gabriel Crainic</h3>
+                <span class="title">Université du Québec à Montréal & CIRRELT</span>
+                <p class="bio">Teodor Gabriel Crainic is Adjunct Professor of Operations Research, Transportation, and Logistics, School of Management, Université du Québec à Montréal, and Adjunct Professor of Operations Research, Department of Computer Science and Operations Research, Université de Montréal. He is also a senior scientist at CIRRELT, the Interuniversity Research Center for Enterprise Networks, Logistics, and Transportation.</p>
+                <p class="bio">The research interests of Professor Crainic are in network, integer, and combinatorial optimization, meta-heuristics, and parallel computing applied to the planning and management of complex systems. Major contributions targeted methods for national/regional planning, the design, scheduling, and operation management of consolidation-based carriers.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CONFGOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

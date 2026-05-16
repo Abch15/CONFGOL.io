@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue | GOL'26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .venue-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.8)), url('images/Fez.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 30px;
+            margin-top: 120px;
+            margin-bottom: 60px;
+        }
+        .venue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        .venue-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 25px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .venue-card:hover { transform: translateY(-10px); border-color: var(--primary-pink); }
+        .venue-card img { width: 100%; height: 250px; object-fit: cover; }
+        .venue-card-content { padding: 30px; }
+        .venue-card-content h3 { color: var(--primary-pink); margin-bottom: 15px; }
+        .venue-card-content p { color: #ccc; font-size: 15px; text-align: justify; }
+
+        .gallery-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 60px;
+        }
+        .gallery-preview img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: var(--transition);
+            filter: grayscale(0.5);
+        }
+        .gallery-preview img:hover { filter: grayscale(0); transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">CONFGOL</a>
+            </div>
+            <nav id="main-nav">
+                <div id="toggle-nav" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sponsor-and-partners.html">Sponsors</a></li>
+                    <li><a href="keynote-speakers.html">Speakers</a></li>
+                    <li><a href="special-sessions.html">Sessions</a></li>
+                    <li><a href="author-guideline.html">Guidelines</a></li>
+                    <li><a href="committees.html">Committees</a></li>
+                    <li><a href="venue.html" class="active">Venue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="venue-hero">
+            <h1 style="font-size: clamp(2rem, 5vw, 4rem); font-weight: 800;">Discover Fez, Morocco</h1>
+        </div>
+
+        <div class="section-header">
+            <p style="max-width: 800px; margin: 0 auto; color: #ccc;">Step into a world where history, culture, and tradition come to life—welcome to Fez, Morocco's cultural and spiritual capital.</p>
+        </div>
+
+        <div class="venue-grid">
+            <div class="venue-card">
+                <img src="images/alquaraouiyne.jpg" alt="Al Quaraouiyine">
+                <div class="venue-card-content">
+                    <h3>A Journey Through Time</h3>
+                    <p>Fez is home to the world's oldest university, Al Quaraouiyine, and its UNESCO-listed Medina is a labyrinth of narrow alleys filled with bustling souks and exquisite mosques.</p>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="images/artisanat.jpg" alt="Artisanat">
+                <div class="venue-card-content">
+                    <h3>Authentic Experience</h3>
+                    <p>Wander through the Medina and witness artisans crafting leather goods, ceramics, and textiles using age-old techniques. The famous Chouara Tannery is an unforgettable sight.</p>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="images/CuisineMarocaine.jpg" alt="Cuisine">
+                <div class="venue-card-content">
+                    <h3>Culinary Delights</h3>
+                    <p>Savor the flavors of authentic Moroccan cuisine in Fez, where the tantalizing aroma of freshly baked bread, spiced tagines, and sweet pastilla fills the air.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header" style="margin-top: 100px; margin-bottom: 30px;">
+            <h2>City Gallery</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="gallery-preview">
+            <img src="images/fes2.jpg" alt="Fez">
+            <img src="images/image13.jpg" alt="Fez">
+            <img src="images/image14.jpg" alt="Fez">
+            <img src="images/image1.jpg" alt="Fez">
+            <img src="images/image3.jpg" alt="Fez">
+            <img src="images/image4.jpg" alt="Fez">
+            <img src="images/image7.jpg" alt="Fez">
+            <img src="images/image8.jpg" alt="Fez">
+            <img src="images/fesnuit.jpg" alt="Fez">
+        </div>
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CONFGOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

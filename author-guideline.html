@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOL 2026 Conference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .guideline-wrapper { display: flex; gap: 40px; margin-top: 50px; }
+        .guideline-main { flex: 1; }
+        .guideline-sidebar { flex: 0 0 350px; }
+        .doc-section {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 40px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        .doc-section h3 { color: var(--primary-pink); margin-bottom: 20px; font-size: 1.5rem; }
+        .doc-section p { color: #ccc; margin-bottom: 15px; font-size: 15px; }
+        .download-box {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .proceeding-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            transition: var(--transition);
+        }
+        .proceeding-card:hover { transform: translateX(5px); background: rgba(255, 255, 255, 0.1); }
+        .proceeding-card img { width: 60px; height: 80px; object-fit: cover; border-radius: 5px; }
+        .proceeding-card p { font-size: 12px; color: #aaa; margin: 0; }
+        @media (max-width: 992px) {
+            .guideline-wrapper { flex-direction: column; }
+            .guideline-sidebar { flex: 0 0 auto; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">CONFGOL</a>
+            </div>
+            <nav id="main-nav">
+                <div id="toggle-nav" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sponsor-and-partners.html">Sponsors</a></li>
+                    <li><a href="keynote-speakers.html">Speakers</a></li>
+                    <li><a href="special-sessions.html">Sessions</a></li>
+                    <li><a href="author-guideline.html" class="active">Guidelines</a></li>
+                    <li><a href="committees.html">Committees</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 150px;">
+        <div class="section-header">
+            <h2>Author Guidelines</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="guideline-wrapper">
+            <div class="guideline-main">
+                <div class="doc-section">
+                    <h3>Paper Preparation</h3>
+                    <p>Submitted papers must present original unpublished research that is not currently under review for any other conference or journal. Full papers must be in English and submitted in PDF format (range of 6-10 pages).</p>
+                    <p>Authors are kindly advised to follow the <strong>Springer Proceedings</strong> templates for their manuscripts.</p>
+                    
+                    <div class="download-box">
+                        <a href="docs/Word_Template.zip" class="btn btn-secondary"><i class="fas fa-file-word"></i> Word Template</a>
+                        <a href="docs/LaTex_Package.zip" class="btn btn-secondary"><i class="fas fa-file-code"></i> LaTeX Package</a>
+                        <a href="docs/typeinst.pdf" class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Instructions PDF</a>
+                    </div>
+                </div>
+
+                <div class="doc-section">
+                    <h3>Copyright & Permissions</h3>
+                    <p>Authors of accepted papers must sign the Springer copyright form (License to Publish). Authors wishing to include previously published figures or tables must obtain permission from the copyright owners.</p>
+                    <a href="docs/Springer_Licence.docx" class="btn btn-primary"><i class="fas fa-signature"></i> License to Publish</a>
+                </div>
+
+                <div class="doc-section">
+                    <h3>Submission Process</h3>
+                    <p>To submit your paper, please access the online submission system. Ensure your paper is appropriately structured and received before the due date.</p>
+                    <button class="btn btn-primary">Go to Submission System</button>
+                </div>
+            </div>
+
+            <aside class="guideline-sidebar">
+                <h3 style="margin-bottom: 25px; font-size: 1.2rem;">Past Proceedings</h3>
+                <div class="proceeding-card">
+                    <img src="images/Proceeding1.png" alt="P1">
+                    <p>GOL'24 Volume 1 - Springer Proceedings</p>
+                </div>
+                <div class="proceeding-card">
+                    <img src="images/Proceeding2.png" alt="P2">
+                    <p>GOL'24 Volume 2 - Springer Proceedings</p>
+                </div>
+                <div class="proceeding-card">
+                    <img src="images/Proceeding3.png" alt="P3">
+                    <p>GOL'20 - Springer Proceedings</p>
+                </div>
+                <div class="proceeding-card">
+                    <img src="images/Proceeding4.png" alt="P4">
+                    <p>GOL'16 - Springer Proceedings</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CONFGOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
